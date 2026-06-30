@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        main {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 0px 0px;
+        }
+
+        .detail-2-author-section {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+
+        /* ── TOP HEADER ── */
+        .author-header {
+
+            border-bottom: 1px solid var(--author-border);
+            padding: 28px 40px;
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
+        .author-avatar-wrap {
+            flex-shrink: 0;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--author-accent);
+            background: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .author-avatar-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .author-avatar-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: #aaa;
+            font-size: 11px;
+        }
+
+        .author-avatar-placeholder svg {
+            width: 32px;
+            height: 32px;
+            fill: #ccc;
+        }
+
+        .author-header-info {
+            flex: 1;
+        }
+
+        .author-role-label {
+            font-size: 11px;
+            font-family: 'DM Sans', sans-serif;
+            color: var(--author-muted);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .author-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--author-text);
+            margin-bottom: 8px;
+        }
+
+        .author-bio {
+            font-family: 'Source Serif 4', serif;
+            font-size: 14px;
+            color: var(--author-muted);
+            line-height: 1.65;
+            max-width: 540px;
+            margin-bottom: 12px;
+        }
+
+        .author-socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .author-social-link {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            background: var(--author-tag-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--author-muted);
+            text-decoration: none;
+            font-size: 13px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .author-social-link:hover {
+            background: var(--author-accent);
+            color: #fff;
+        }
+
+        /* ── BREADCRUMB ── */
+        .author-breadcrumb {
+            padding: 12px 0px;
+            font-size: 12px;
+            color: gray;
+            border-bottom: 1px solid var(--author-border);
+            background: var(--author-card-bg);
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .author-breadcrumb a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .author-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── LAYOUT ── */
+        .author-layout {
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            gap: 32px;
+            max-width: 1100px;
+            margin: 32px auto;
+            padding: 0 24px;
+        }
+
+        /* ── POST GRID ── */
+        .author-posts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .author-post-card {
+            background: var(--author-card-bg);
+            border: 1px solid rgb(206, 201, 201);
+
+            overflow: hidden;
+            transition: box-shadow 0.25s, transform 0.25s;
+        }
+
+        .author-post-card:hover {
+
+            border: 1px solid black;
+        }
+
+        .author-post-card-inner {
+            padding: 18px;
+        }
+
+        .author-post-meta {
+            font-size: 11px;
+            color: var(--author-muted);
+            margin-bottom: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+            color: #666;
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .author-post-meta-name {
+            color: var(--author-accent);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .author-post-meta-sep {
+            color: var(--author-border);
+        }
+
+        .author-post-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.35;
+            color: var(--author-text);
+            margin-bottom: 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .author-post-title:hover {
+            color: var(--author-accent);
+        }
+
+        /* ── Card body: LEFT col (image + para1) | RIGHT col (para2) ── */
+        .author-post-body {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        /* LEFT column: image on top, para1 below */
+        .author-post-left-col {
+            flex: 0 0 185px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .author-post-image-wrap {
+            width: 100%;
+            height: 100px;
+            background: #e0dbd2;
+
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .author-post-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .author-post-image-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            color: #b5ad9f;
+            font-size: 10px;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .author-post-image-placeholder svg {
+            width: 28px;
+            height: 28px;
+            fill: #c9c0b5;
+        }
+
+        /* Para under the image (left col) */
+        .author-post-excerpt-left {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #777;
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+        }
+
+        /* RIGHT column: para2 + read more, flex alongside para1 */
+        .author-post-right-col {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .author-post-excerpt-right {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #777;
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+        }
+
+        .author-post-readmore {
+            font-size: 14px;
+            line-height: 1.5;
+            color: black;
+            font-family: "Roboto", sans-serif;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            letter-spacing: 0.02em;
+        }
+
+        .author-post-readmore:hover {
+            text-decoration: underline;
+        }
+
+        /* ── SIDEBAR ── */
+        .author-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .author-sidebar-block {
+           
+            border-radius: 6px;
+            padding: 18px;
+        }
+
+        .author-sidebar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--author-text);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--author-accent);
+            display: inline-block;
+        }
+
+        /* Search */
+        .author-search-form {
+            display: flex;
+            gap: 0;
+        }
+
+        .author-search-input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid var(--author-border);
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 13px;
+            background: #fff;
+            outline: none;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .author-search-btn {
+            padding: 8px 14px;
+            background: var(--author-accent);
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .author-search-btn:hover {
+            background: #922f0e;
+        }
+
+        /* Recent Posts */
+        .author-recent-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .author-recent-item a {
+            font-size: 13px;
+            color: var(--author-text);
+            text-decoration: none;
+            line-height: 1.45;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .author-recent-item a::before {
+            content: '›';
+            color: var(--author-accent);
+            font-size: 16px;
+            line-height: 1.1;
+            flex-shrink: 0;
+        }
+
+        .author-recent-item a:hover {
+            color: var(--author-accent);
+        }
+
+        /* Ad block */
+        .author-ad-block {
+            min-height: 140px;
+            border: 2px dashed var(--author-border);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+            color: var(--author-muted);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+
+        .author-ad-block-label {
+            font-size: 11px;
+            color: var(--author-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        /* Tags */
+        .author-tags-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .author-tag {
+            padding: 4px 10px;
+            background: var(--author-tag-bg);
+            border: 1px solid var(--author-border);
+            border-radius: 3px;
+            font-size: 11px;
+            color: var(--author-text);
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .author-tag:hover {
+            background: var(--author-accent);
+            color: #fff;
+            border-color: var(--author-accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .author-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .author-posts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .author-header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .author-breadcrumb {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+         <!-- Ticker Bar -->
+    <div class="header-ticker-wrapper">
+        <div class="header-ticker-container">
+            <div class="header-ticker-label">
+                 <span class="header-ticker-icon">&#9889;</span>
+                <span>LATEST</span>
+            </div>
+            <div class="header-ticker-content">
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business & Finance News Today" href="world/gazas-nasser-hospital-condemns-msf-suspension-most-sevice">Gaza’s Nasser Hospital condemns MSF decision to suspend most services</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business & Finance News Today" href="entertainment/logan-pauls-pikachu-illustrator-pokemon-card-sells-record">Logan Paul’s Pikachu Illustrator Pokémon card sells for record $16.5M at auction</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business & Finance News Today" href="technology/one-tech-tip-take-iphone-security-to-extreme-lockdown-mode">One Tech Tip: Utilize Lockdown Mode to enhance the security of your iPhone.</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business & Finance News Today" href="business/kraft‑heinz‑pauses‑plans‑to‑split‑into‑two‑companies‑fixable">Kraft Heinz pauses plans to split into 2 companies, says its problems are ‘fixable’</a></span>
+                <!-- Duplicate content for seamless loop -->
+               <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business & Finance News Today" href="world/gazas-nasser-hospital-condemns-msf-suspension-most-sevice">Gaza’s Nasser Hospital condemns MSF decision to suspend most services</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business & Finance News Today" href="entertainment/logan-pauls-pikachu-illustrator-pokemon-card-sells-record">Logan Paul’s Pikachu Illustrator Pokémon card sells for record $16.5M at auction</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business & Finance News Today" href="technology/one-tech-tip-take-iphone-security-to-extreme-lockdown-mode">One Tech Tip: Utilize Lockdown Mode to enhance the security of your iPhone.</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business & Finance News Today" href="business/kraft‑heinz‑pauses‑plans‑to‑split‑into‑two‑companies‑fixable">Kraft Heinz pauses plans to split into 2 companies, says its problems are ‘fixable’</a></span>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Bar with Controls and Logo -->
+    <div class="header-top-bar">
+        <div class="header-top-container">
+            <div class="header-controls-left">
+                <button class="header-icon-btn" onclick="openSidebar()">☰</button>
+                  <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar-container" id="sidebar">
+        <div class="sidebar-header">
+            <img src="/images/" alt="">
+            <button class="sidebar-close-btn" onclick="closeSidebar()">«</button>
+        </div>
+
+        <div class="sidebar-content">
+            <!-- Author Section -->
+            <div class="sidebar-author-section">
+                <h2 class="sidebar-author-title">AUTHOR</h2>
+                <div class="sidebar-author-box">
+                    <div class="sidebar-author-avatar">
+                        <img src="/images/william-a-kim.jpg" 
+                             alt="Harrison B. Brown" 
+                             class="sidebar-author-image">
+                    </div>
+                    <div class="sidebar-author-info">
+                        <div class="sidebar-author-role">Editor</div>
+                        <h3 class="sidebar-author-name"><a title="The Capitalism Blog | Global Business & Finance News Today" href="william-a-kim">William A.Kim</a></h3>
+                        <p class="sidebar-author-bio">William covers us politics and sports news across the world.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today Show Section -->
+            <div class="sidebar-show-section">
+                <h2 class="sidebar-show-title">TODAY SHOW</h2>
+                <div class="sidebar-show-item">
+                    <img src="/images/Tony-Clark.webp" 
+                         alt="Show" 
+                         class="sidebar-show-image">
+                    <p class="sidebar-show-text">
+                       <a title="The Capitalism Blog | Global Business & Finance News Today" href="sports/tony-clark-resigns-mlb-players-union-head-cap-fight-looms">Tony Clark resigns as MLB players’ union head as possible cap fight looms</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+                <!--  -->
+                <!-- <button class="header-icon-btn">⚙</button> -->
+                <!-- <button class="header-icon-btn header-dark-mode"><img src="/images/moon.png" alt="moon"></button> -->
+            </div>
+            
+            <div class="header-logo-container">
+                  <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com"><img src="/images/The-Capitalism-Blog-logo.svg" alt="Logo" class="header-logo-img"></a>
+            </div>
+            
+            <div class="header-social-links">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://medium.com/@thecapitalismblog_" class="header-social-icon"><img src="/images/medium.webp" alt="medium"></a>
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.reddit.com/user/thecapitalismblognew/" class="header-social-icon reddit"><img src="/images/reddit.png" alt="reddit"></a>
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://substack.com/@thecapitalismblog" class="header-social-icon"><img src="/images/substack.webp" alt="substack"></a>
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://x.com/thecapital_blog" class="header-social-icon"><img src="/images/twitter.webp" alt="twitter"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navigation Menu -->
+<nav class="header-navigation">
+    <div class="header-nav-container">
+        <ul class="header-menu">
+            <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com" class="header-menu-link header-active">HOME</a>
+            </li>
+            <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../world/world" class="header-menu-link">World</a>
+            </li>
+            <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../us/us" class="header-menu-link">U.S</a>
+            </li>
+            <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../business/business" class="header-menu-link">Business</a>
+            </li>
+            <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../finance/finance" class="header-menu-link">Finance</a>
+            </li>
+            <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../entertainment/entertainment" class="header-menu-link">Entertainment</a>
+            </li>
+            <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../technology/technology" class="header-menu-link">Technology</a>
+            </li>
+             <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../politics/politics" class="header-menu-link">Politics</a>
+            </li>
+             <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../sports/sports" class="header-menu-link">Sports</a>
+            </li>
+        </ul>
+        <button class="header-search-btn"><img src="../images/icons8-search-50.png" alt=""></button>
+        <button class="mobile-menu-toggle">
+            <span>MENU</span>
+            <span class="menu-icon">☰</span>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+            <span>MENU</span>
+            <button class="mobile-menu-close">✕</button>
+        </div>
+         <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com" class="mobile-menu-link">HOME</a>
+                <span class="dropdown-arrow">▼</span>
+            </li>
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../world/world" class="mobile-menu-link">WORLD</a>
+                <span class="dropdown-arrow">▼</span>
+            </li>
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../us/us" class="mobile-menu-link">US</a>
+                <span class="dropdown-arrow">▼</span>
+            </li>
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../business/business" class="mobile-menu-link">BUSINESS</a>
+                <span class="dropdown-arrow">▼</span>
+            </li>
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../finance/finance" class="mobile-menu-link">FINANCE</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../entertainment/entertainment" class="mobile-menu-link">ENTERTAINMENT</a>
+                <span class="dropdown-arrow">▼</span>
+            </li>
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../technology/technology" class="mobile-menu-link">TECHNOLOGY</a>
+            <span class="dropdown-arrow">▼</span>
+            </li>
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../politics/politics" class="mobile-menu-link">POLITICS</a>
+           <span class="dropdown-arrow">▼</span>
+            </li>
+              <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../sports/sports" class="mobile-menu-link">SPORTS</a>
+            <span class="dropdown-arrow">▼</span>
+            </li>
+        </ul>
+        <div class="mobile-search-container">
+            <button class="header-search-btn mobile-search-btn">
+                <img src="../images/icons8-search-50.png" alt="">
+            </button>
+        </div>
+    </div>
+</nav>
+
+        <!--  -->
+        <div class="cat-two-container">
+            <div class="cat-col">
+                <header class="detail-header">
+
+                </header>
+
+                <div class="detail-container">
+
+
+
+
+
+                    <!-- detail section2 -->
+                    <div class="detail-2-container">
+
+
+
+                        <!-- Author Section -->
+                        <div class="detail-2-author-section">
+
+                            <div class="detail-2-author-box">
+                                <div class="detail-2-author-avatar">
+                                    <img src="/images/harrison-b-brown.jpg" alt="Masin Dalton" class="detail-2-avatar-image"
+                                        width="10" height="10">
+                                </div>
+                                <div class="detail-2-author-info">
+                                    <div class="detail-2-author-date">Editor / Published posts: 24</div>
+                                    <h3 class="detail-2-author-name">
+                                        <a title="title" href="harrison-b-brown"
+                                            class="detail-2-author-name-link">Harrison
+B. Brown
+                                        </a>
+                                    </h3>
+                                    <p class="detail-2-author-bio">focuses on Entertainment trends, analyzing how business, technology  and Finance developments affect regional and global economies.</p>
+                                    <div class="detail-2-author-social">
+                                        <a title="title" href="https://x.com/harrison_bbrown" class="detail-2-social-link"><img
+                                                src="../images/twitter.webp" alt="twitter" width="10" height="10"></a>
+                                        <a title="title" href="https://substack.com/@harrisonbbrown" class="detail-2-social-link"><img
+                                                src="../images/substack.webp" alt="substack" width="10" height="10"></a>
+                                        <a title="title" href="https://www.reddit.com/user/harrisonbbrown/" class="detail-2-social-link reddit"><img
+                                                src="../images/reddit.png" alt="reddit" width="10" height="10"></a>
+                                        <a title="title" href="https://medium.com/@harrisonbbrown" class="detail-2-social-link"><img
+                                                src="../images/medium.webp" alt="medium" width="10" height="10"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ── BREADCRUMB ── -->
+                        <nav class="author-breadcrumb">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com">Home</a> &rsaquo; Articles posted by Harrison B. Brown
+
+                        </nav>
+                        <!-- POSTS -->
+                        <div class="author-posts-main">
+                            <div class="author-posts-grid">
+
+                                <!-- Card 1 -->
+
+                                <article class="author-post-card">
+                                    <div class="author-post-card-inner">
+                                        <div class="author-post-meta">
+                                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="author-post-meta-name">Harrison B. Brown</a>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>On Feb 25, 2026</span>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>164 Views</span>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>8 Mins</span>
+                                        </div>
+                                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="entertainment/bruce-springsteen-estreet-band-launch-land-hope-dreams-tour" class="author-post-title">Bruce Springsteen and E Street Band to launch ‘Land of Hope and Dreams’ US tour next month</a>
+                                        <div class="author-post-body">
+                                            <div class="author-post-left-col">
+                                                <div class="author-post-image-wrap">
+                                                   <img src="/images/Bruce-Springsteen.webp" alt="Post Image" />
+                                                   
+                                                </div>
+                                                <p class="author-post-excerpt-left">Bruce Springsteen is bringing his sharp political satire back to American venues this spring.</p>
+                                            </div>
+                                            <div class="author-post-right-col">
+                                                <p class="author-post-excerpt-right">On Tuesday, the rock star and the E Street Band announced the start of their "Land of Hope and Dreams" American tour. It will begin on March 31 in Minneapolis and include 20 shows. The tour will mix arena rock with a message about democracy, freedom[…]</p>
+                                                <a title="The Capitalism Blog | Global Business & Finance News Today" href="entertainment/bruce-springsteen-estreet-band-launch-land-hope-dreams-tour" class="author-post-readmore">Read the Post →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 2 -->
+                                <article class="author-post-card">
+                                    <div class="author-post-card-inner">
+                                        <div class="author-post-meta">
+                                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="author-post-meta-name">Harrison B. Brown</a>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>On Feb 25, 2026</span>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>94 Views</span>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>4 Mins</span>
+                                        </div>
+                                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="business/gifts-and-soup-from-uncle-jeffrey-epstein-ties-goldman" class="author-post-title">Gifts and soup from ‘Uncle Jeffrey': The Epstein ties that ended Kathy Ruemmler’s run at Goldman</a>
+                                        <div class="author-post-body">
+                                            <div class="author-post-left-col">
+                                                <div class="author-post-image-wrap">
+                                                    <img src="/images/Gifts-and-soup.webp" alt="Post Image" />
+                                                   
+                                                </div>
+                                                <p class="author-post-excerpt-left"> Kathy Ruemmler, the general counsel for Goldman Sachs, has had a long and successful career in law. As a federal prosecutor </p>
+                                            </div>
+                                            <div class="author-post-right-col">
+                                                <p class="author-post-excerpt-right">she helped convict Enron executives like Ken Lay and Jeffrey Skilling. She worked for President Barack Obama in a number of different jobs during his two terms in office, including as White House Counsel. […]</p>
+                                                <a title="The Capitalism Blog | Global Business & Finance News Today" href="business/gifts-and-soup-from-uncle-jeffrey-epstein-ties-goldman" class="author-post-readmore">Read the Post →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+
+
+                                <!-- Card 3 -->
+                                <article class="author-post-card">
+                                    <div class="author-post-card-inner">
+                                        <div class="author-post-meta">
+                                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="author-post-meta-name">Harrison B. Brown</a>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>On Feb 25, 2026</span>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>164 Views</span>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>8 Mins</span>
+                                        </div>
+                                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="technology/gabon-suspends-social-media-amid-dissent-crackdown" class="author-post-title">Social media access is suspended in Gabon after its leader is accused by critics of cracking down on dissent.</a>
+                                        <div class="author-post-body">
+                                            <div class="author-post-left-col">
+                                                <div class="author-post-image-wrap">
+                                                   <img src="/images/Gabon-suspends.webp" alt="Post Image" />
+                                                   
+                                                </div>
+                                                <p class="author-post-excerpt-left"> As critics accuse the country's leader of cracking down on dissent, Gabon's authorities announced that access to internet platforms and social media has been blocked throughout the central African country until further notice.</p>
+                                            </div>
+                                            <div class="author-post-right-col">
+                                                <p class="author-post-excerpt-right">The communications agency claimed to have seen offensive, hateful, defamatory, and inappropriate content on social media and digital platforms that compromises national security, human dignity, and the nation's institutions. […]</p>
+                                                <a title="The Capitalism Blog | Global Business & Finance News Today" href="technology/gabon-suspends-social-media-amid-dissent-crackdown" class="author-post-readmore">Read the Post →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 4 -->
+                                <article class="author-post-card">
+                                    <div class="author-post-card-inner">
+                                        <div class="author-post-meta">
+                                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="author-post-meta-name">Harrison B. Brown</a>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>On Feb 25, 2026</span>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>94 Views</span>
+                                            <span class="author-post-meta-sep">|</span>
+                                            <span>4 Mins</span>
+                                        </div>
+                                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="finance/frances-finance-minister-demands-capgemini-ice-contract-firm" class="author-post-title">France’s finance minister demands tech firm Capgemini explain ICE contract</a>
+                                        <div class="author-post-body">
+                                            <div class="author-post-left-col">
+                                                <div class="author-post-image-wrap">
+                                                   <img src="/images/Frances-finance.webp" alt="Post Image" />
+                                                   
+                                                </div>
+                                                <p class="author-post-excerpt-left">As calls mount for an investigation of the U.S. Immigration and Customs Enforcement agency's participation in implementing the Trump administration's immigration crackdown</p>
+                                            </div>
+                                            <div class="author-post-right-col">
+                                                <p class="author-post-excerpt-right"> France's finance minister is pressing the French computer giant Capgemini to be completely transparent regarding a contract with the agency.[…]</p>
+                                                <a title="The Capitalism Blog | Global Business & Finance News Today" href="finance/frances-finance-minister-demands-capgemini-ice-contract-firm" class="author-post-readmore">Read the Post →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!--  -->
+
+                <!--  -->
+
+            </div>
+            <aside class="cat-two-sidebar">
+                <div class="sticky">
+
+
+                    <div class="cat-two-search-box">
+                        <form class="cat-two-search-form">
+                            <input type="text" class="cat-two-search-input" placeholder="">
+                            <button type="submit" class="cat-two-search-button">Search</button>
+                        </form>
+                    </div>
+
+                    <div class="cat-two-recent-posts">
+                        <h2 class="cat-two-sidebar-title">RECENT POST</h2>
+                        <ul class="cat-two-posts-list">
+                            <li class="cat-two-post-item">
+                                <a title="title"
+                                    href="../us/investigators-searching-arizona-disappearance-nancy-guthrie"
+                                    class="cat-two-post-link">Investigators searching a location in Arizona in
+                                    disappearance of Nancy Guthrie</a>
+                            </li>
+                            <li class="cat-two-post-item">
+                                <a title="title" href="../world/iran-1979-revolution-anger-crackdown-tensions-us"
+                                    class="cat-two-post-link">Iran commemorates 1979 revolution as nation is squeezed by
+                                    anger over crackdown and tensions with US</a>
+                            </li>
+                            <li class="cat-two-post-item">
+                                <a title="title"
+                                    href="../entertainment/oscar-hopefuls-including-jessie-buckley-and-timothee-chalamet-gather"
+                                    class="cat-two-post-link">Oscar hopefuls including Jessie Buckley and Timothée
+                                    Chalamet gather for luncheon and class picture</a>
+                            </li>
+                            <li class="cat-two-post-item">
+                                <a title="title"
+                                    href="../politics/ice-chief-defends-officers-actions-after-2-protesters-deaths"
+                                    class="cat-two-post-link">ICE chief defends his officers’ actions before Congress
+                                    after the deaths of 2 protesters</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cat-two-ad-section">
+                        <h2 class="cat-two-ad-title">ADV HERE</h2>
+                        <a title="title" href="https://newsflashpro.com/"><img src="../images/newsflashpro.jpeg"
+                                alt="Advertisement" class="cat-two-ad-placeholder" width="10" height="10"></a>
+                    </div>
+
+                    <div class="cat-two-tags-section-sidebar">
+                        <h2 class="cat-two-tags-title">TAG</h2>
+                        <div class="cat-two-tags-cloud">
+                            <a title="title" href="#" class="cat-two-tag-button">Home</a>
+                            <a title="title" href="#" class="cat-two-tag-button"> World</a>
+                            <a title="title" href="#" class="cat-two-tag-button">U.S</a>
+                            <a title="title" href="#" class="cat-two-tag-button"> Business</a>
+                            <a title="title" href="#" class="cat-two-tag-button">Finance</a>
+                            <a title="title" href="#" class="cat-two-tag-button">Entertainment</a>
+                            <a title="title" href="#" class="cat-two-tag-button">Technology</a>
+                            <a title="title" href="#" class="cat-two-tag-button">Author</a>
+                           
+                            <a title="title" href="#" class="cat-two-tag-button">Politics</a>
+
+                            <a title="title" href="#" class="cat-two-tag-button">Sports</a>
+
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+    </main>
+
+
+
+
+
+    <!--  -->
+    <!-- footer -->
+      <footer class="footer-main">
+        <div class="footer-container">
+            <div class="footer-top">
+                <!-- About Us Section -->
+                <div class="footer-column">
+                    <h3 class="footer-section-title">About Us</h3>
+                    <p class="footer-about-text">The Capitalism Blog is a global news platform covering World, U.S., Business, Finance, Entertainment, Technology, Politics, and Sports</p>
+                    <p class="footer-about-text">We deliver timely, accurate, and insightful reporting to keep you informed in a fast-changing global economy.</p>
+                </div>
+
+                <!-- Tag Cloud Section -->
+                <div class="footer-column">
+                    <h3 class="footer-section-title">Tag Cloud</h3>
+                    <div class="footer-tags">
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com" class="footer-tag">Home</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="../world/world" class="footer-tag">World</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="../us/us" class="footer-tag">U.S</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="business/business" class="footer-tag">Business</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="entertainment/entertainment" class="footer-tag">Entertainment</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="finance/finance" class="footer-tag">Finance</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="politics/politics" class="footer-tag">Politics</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="sports/sports" class="footer-tag">Sport</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="technology/technology" class="footer-tag">TechNews</a>
+                         
+                         <a title="The Capitalism Blog | Global Business & Finance News Today" href="william-a-kim" class="footer-tag">Report by William</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="harrison-b-brown" class="footer-tag">Report by Harrison</a>
+
+                    </div>
+                </div>
+
+                <!-- Hot News Section -->
+                <div class="footer-column">
+                    <h3 class="footer-section-title">Hot News</h3>
+                    <div class="footer-news-item">
+                        <div class="footer-news-author"><a title="The Capitalism Blog | Global Business & Finance News Today" href="william-a-kim">Written by:<br> William <br> A.Kim</a></div>
+                        <div class="footer-news-title">William covers us politics and sports news across the world</div>
+                    </div>
+                    <div class="footer-news-item">
+                        <div class="footer-news-author"><a title="The Capitalism Blog | Global Business & Finance News Today" href="harrison-b-brown">Written by:<br>Harrison <br> B. Brown</a></div>
+                        <div class="footer-news-title"> focuses on Entertainment trends, analyzing how business, technology  and Finance developments</div>
+                    </div>
+                </div>
+
+                <!-- Meta Section -->
+                <div class="footer-column">
+                    <h3 class="footer-section-title">Social Media</h3>
+                     <ul class="footer-meta-list">
+                        <li class="footer-meta-item">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://medium.com/@thecapitalismblog_" class="footer-meta-link">Medium</a>
+                        </li>
+                        <li class="footer-meta-item">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.reddit.com/user/thecapitalismblognew/" class="footer-meta-link">Reddit</a>
+                        </li>
+                        <li class="footer-meta-item">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://x.com/thecapital_blog" class="footer-meta-link">Twitter</a>
+                        </li>
+                        <li class="footer-meta-item">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://substack.com/@thecapitalismblog" class="footer-meta-link">Substack</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-nav">
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com" class="footer-nav-link">Home</a>
+                     <a title="The Capitalism Blog | Global Business & Finance News Today" href="policy-privacy" class="footer-nav-link">Privacy and Policy</a>
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com" class="footer-nav-link">Top News</a>
+                </div>
+
+                <div class="footer-copyright">
+                    <span class="footer-copyright-text">© Copyright 2026 - All Rights Reserved</span>
+                   
+                </div>
+
+                <!-- <div class="footer-scroll-top">
+                    ↑
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!--side bar  -->
+    <script>
+        function openSidebar() {
+            document.getElementById('sidebar').classList.add('active');
+            document.getElementById('sidebarOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.remove('active');
+            document.getElementById('sidebarOverlay').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close sidebar with Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeSidebar();
+            }
+        });
+    </script>
+    <!-- mobile menu -->
+    <script>// JavaScript for menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const menuClose = document.querySelector('.mobile-menu-close');
+            const menuOverlay = document.querySelector('.mobile-menu-overlay');
+
+            // Open menu
+            menuToggle.addEventListener('click', function () {
+                menuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            });
+
+            // Close menu
+            menuClose.addEventListener('click', function () {
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+
+            // Optional: Close menu when clicking on a link
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    menuOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        });</script>
+    <script>
+        // Handle active state on menu items
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+
+        mobileMenuLinks.forEach((link, index) => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Remove active class from all
+                mobileMenuLinks.forEach(l => l.classList.remove('active'));
+                mobileMenuItems.forEach(i => i.classList.remove('active'));
+
+                // Add active class to clicked item
+                this.classList.add('active');
+                mobileMenuItems[index].classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

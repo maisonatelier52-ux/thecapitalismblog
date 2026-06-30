@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website Header</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
+    <main>
+    <!-- Ticker Bar -->
+    <div class="header-ticker-wrapper">
+        <div class="header-ticker-container">
+            <div class="header-ticker-label">
+                 <span class="header-ticker-icon">&#9889;</span>
+                <span>LATEST</span>
+            </div>
+            <div class="header-ticker-content">
+                <span class="header-ticker-item">Incongruous jeepers jellyfish one far Well known</span>
+                <span class="header-ticker-item">This nudged jeepers while much the less</span>
+                <span class="header-ticker-item">This nudged jeepers ded sesulky oite ten around...</span>
+                <span class="header-ticker-item">Timmediately</span>
+                <!-- Duplicate content for seamless loop -->
+                <span class="header-ticker-item">Incongruous jeepers jellyfish one far Well known</span>
+                <span class="header-ticker-item">This nudged jeepers while much the less</span>
+                <span class="header-ticker-item">This nudged jeepers ded sesulky oite ten around...</span>
+                <span class="header-ticker-item">Timmediately</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Bar with Controls and Logo -->
+    <div class="header-top-bar">
+        <div class="header-top-container">
+            <div class="header-controls-left">
+                <button class="header-icon-btn" onclick="openSidebar()">☰</button>
+                  <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar-container" id="sidebar">
+        <div class="sidebar-header">
+            <img src="images/" alt="">
+            <button class="sidebar-close-btn" onclick="closeSidebar()">«</button>
+        </div>
+
+        <div class="sidebar-content">
+            <!-- Author Section -->
+            <div class="sidebar-author-section">
+                <h2 class="sidebar-author-title">AUTHOR</h2>
+                <div class="sidebar-author-box">
+                    <div class="sidebar-author-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=70&h=70&fit=crop" 
+                             alt="Maxin Dalton" 
+                             class="sidebar-author-image">
+                    </div>
+                    <div class="sidebar-author-info">
+                        <div class="sidebar-author-role">Editor</div>
+                        <h3 class="sidebar-author-name">Maxin Dalton</h3>
+                        <p class="sidebar-author-bio">Within spread beside the ouch sulky and this wonde</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today Show Section -->
+            <div class="sidebar-show-section">
+                <h2 class="sidebar-show-title">TODAY SHOW</h2>
+                <div class="sidebar-show-item">
+                    <img src="images/nman-768x375.webp" 
+                         alt="Show" 
+                         class="sidebar-show-image">
+                    <p class="sidebar-show-text">
+                        Reprehenderit organic dreamcatcher, mollit quis forage fanny pack mcsweeney's 3 wolf moon et. Incididunt sint swag wayfarers stumptown magna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+                <!--  -->
+                <!-- <button class="header-icon-btn">⚙</button> -->
+                <!-- <button class="header-icon-btn header-dark-mode"><img src="images/moon.png" alt="moon"></button> -->
+            </div>
+            
+            <div class="header-logo-container">
+                  <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com"><img src="images/The-Capitalism-Blog-logo.svg" alt="Logo" class="header-logo-img"></a>
+            </div>
+            
+            <div class="header-social-links">
+                  <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://medium.com/@thecapitalismblog_" class="header-social-icon"><img src="images/medium.webp" alt="medium"></a>
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-social-icon reddit"><img src="images/reddit.png" alt=""></a>
+                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://substack.com/@thecapitalismblog" class="header-social-icon"><img src="images/substack.webp" alt="substack"></a>
+              <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://x.com/thecapital_blog" class="header-social-icon"><img src="images/twitter.webp" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="header-navigation">
+        <div class="header-nav-container">
+            <ul class="header-menu">
+                <li class="header-menu-item">
+                   <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com" class="header-menu-link header-active">HOME</a>
+                </li>
+                <li class="header-menu-item">
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">CATEGORY LAYOUTS</a>
+                </li>
+                <li class="header-menu-item">
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">TAGS LAYOUT</a>
+                </li>
+                <li class="header-menu-item">
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">POST STYLES</a>
+                </li>
+                <li class="header-menu-item">
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">MODULE</a>
+                </li>
+                <li class="header-menu-item">
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">CPT</a>
+                </li>
+                <li class="header-menu-item">
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">404</a>
+                </li>
+            </ul>
+            <button class="header-search-btn"><img src="images/icons8-search-50.png" alt=""></button>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="header-content-section">
+        <div class="header-grid">
+            <article class="header-article-card">
+                <div class="header-category-tag">Culture</div>
+                <h2 class="header-article-title">Incongruous Jeepers Jellyfish One Far Well Known</h2>
+            </article>
+            
+            <article class="header-article-card">
+                <div class="header-category-tag">Uncategorized</div>
+                <h2 class="header-article-title">This Nudged Jeepers Ded Sesulky Oite Ten Around Style 3</h2>
+            </article>
+            
+            <article class="header-article-card">
+                <div class="header-category-tag">Culture , Europe</div>
+                <h2 class="header-article-title">Timmediately Quail Was Inverse Much So Remade Dimly Salmon</h2>
+            </article>
+            
+            <article class="header-article-card">
+                <div class="header-category-tag">Politic , Sport</div>
+                <h2 class="header-article-title">This Nudged Jeepers While Much The Less</h2>
+            </article>
+        </div>
+    </div>
+    <!-- section one -->
+    <div class="section-1-container">
+        <div class="section-1-left">
+            <div class="section-1-label">SPORT</div>
+            <img src="images/demo-image28-950x500.webp" alt="Person bending over" class="section-1-hero-image">
+            
+            <h2 class="section-1-main-title">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Sed Do</h2>
+            
+            <p class="section-1-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+            
+            <p class="section-1-author">By <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section-1-author-name">Lorem Ipsum</a> / Editor onFEB 20, 2026</p>
+        <div class="section-1-content-wrapper">
+                <div class="section-1-content-column">
+                    <p class="section-1-content-first-letter">Worem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    
+                    <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+                </div>
+                
+                <div class="section-1-content-column">
+                    <p>In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    
+                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim.</p>
+                      <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section-1-read-more">Read the Post →</a>
+                </div>
+            </div>
+            
+          
+            
+            <ul class="section-1-list">
+                <li class="section-1-list-item">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</li>
+                <li class="section-1-list-item">Sed Do Eiusmod Tempor Incididunt Ut Labore</li>
+            </ul>
+        </div>
+        
+        <div class="section-1-right">
+            <div class="section-1-card">
+                <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">MODULE 1</span> 
+                    <span class="section-1-card-header-gray">SUBTITLE</span>
+                </div>
+                <div class="section-1-card-category">Culture</div>
+                <h3 class="section-1-card-title">Lorem Ipsum Dolor Sit Amet Consectetur</h3>
+                <p class="section-1-card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim</p>
+                <div class="section-1-card-divider"></div>
+                <div class="section-1-card-tags">Politic . Sport</div>
+                <h4 class="section-1-card-subtitle">Sed Do Eiusmod Tempor Incididunt</h4>
+                <p class="section-1-card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            
+            <div class="section-1-card">
+                <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">MODULE 1</span> 
+                    <span class="section-1-card-header-gray">SUBTITLE</span>
+                </div>
+                <div class="section-1-card-category">Culture</div>
+                <h3 class="section-1-card-title">Lorem Ipsum Dolor Sit Amet Consectetur</h3>
+                <p class="section-1-card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim</p>
+                <div class="section-1-card-divider"></div>
+                <div class="section-1-card-tags">Politic . Sport</div>
+                <h4 class="section-1-card-subtitle">Sed Do Eiusmod Tempor Incididunt</h4>
+                <p class="section-1-card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            
+            <div class="section-1-card">
+                <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">MODULE 1</span> 
+                    <span class="section-1-card-header-gray">SUBTITLE</span>
+                </div>
+                <div class="section-1-card-category">Culture</div>
+                <h3 class="section-1-card-title">Lorem Ipsum Dolor Sit Amet Consectetur</h3>
+                <p class="section-1-card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim</p>
+                <div class="section-1-card-divider"></div>
+                <div class="section-1-card-tags">Politic . Sport</div>
+                <h4 class="section-1-card-subtitle">Sed Do Eiusmod Tempor Incididunt</h4>
+                <p class="section-1-card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            
+            <div class="section-1-card">
+                <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">MODULE 1</span> 
+                    <span class="section-1-card-header-gray">SUBTITLE</span>
+                </div>
+                <div class="section-1-card-category">Culture</div>
+                <h3 class="section-1-card-title">Lorem Ipsum Dolor Sit Amet Consectetur</h3>
+                <p class="section-1-card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim</p>
+                <div class="section-1-card-divider"></div>
+                <div class="section-1-card-tags">Politic . Sport</div>
+                <h4 class="section-1-card-subtitle">Sed Do Eiusmod Tempor Incididunt</h4>
+                <p class="section-1-card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+        </div>
+    </div>
+    <!-- section two -->
+      <div class="section-2-container">
+        <div class="section-2-card">
+            <div class="section-2-category">Culture</div>
+            <h3 class="section-2-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+            <p class="section-2-description">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+        </div>
+
+        <div class="section-2-card">
+            <div class="section-2-category">Culture</div>
+            <h3 class="section-2-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+            <p class="section-2-description">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+        </div>
+
+        <div class="section-2-card">
+            <div class="section-2-category">Culture</div>
+            <h3 class="section-2-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+            <p class="section-2-description">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+        </div>
+    </div>
+    <!-- section three -->
+       <div class="section-three-container">
+        <!-- Header -->
+        <div class="section-three-header">
+            <div class="section-three-header-content">
+                <h2 class="section-three-header-title">World Report</h2>
+                <p class="section-three-header-subtitle">Global Warming Issue, USA Operation in Middle East & Myanmar News</p>
+            </div>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="section-three-main">
+            <!-- Left Sidebar - Advertisement Space -->
+            <div class="section-three-left">
+                <div class="section-three-ad-space">
+                    <div class="section-three-ad-text"><img src="images/newsflashpro.jpeg" alt=""></div>
+                </div>
+
+                <!-- Sidebar Card -->
+                <div class="section-three-sidebar-card">
+                    <div class="section-three-sidebar-header">
+                        <span class="section-three-sidebar-header-red">MODULE 1</span> 
+                        <span class="section-three-sidebar-header-gray">SUBTITLE</span>
+                    </div>
+                    <div class="section-three-sidebar-category">Culture</div>
+                    <h3 class="section-three-sidebar-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                    <p class="section-three-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+                    <div class="section-three-sidebar-divider"></div>
+                    <div class="section-three-sidebar-tags">Politic . Sport</div>
+                    <h4 class="section-three-sidebar-subtitle">This Nudged Jeepers While Much The Less</h4>
+                    <p class="section-three-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast</p>
+                </div>
+                <!-- Sidebar Card -->
+                <div class="section-three-sidebar-card">
+                    <div class="section-three-sidebar-header">
+                        <span class="section-three-sidebar-header-red">MODULE 1</span> 
+                        <span class="section-three-sidebar-header-gray">SUBTITLE</span>
+                    </div>
+                    <div class="section-three-sidebar-category">Culture</div>
+                    <h3 class="section-three-sidebar-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                    <p class="section-three-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+                    <div class="section-three-sidebar-divider"></div>
+                    <div class="section-three-sidebar-tags">Politic . Sport</div>
+                    <h4 class="section-three-sidebar-subtitle">This Nudged Jeepers While Much The Less</h4>
+                    <p class="section-three-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast</p>
+                </div>
+            </div>
+
+            <!-- Center Content -->
+            <div class="section-three-center">
+                <div class="section-three-featured-image">
+                    <div class="section-three-image-label">REPORT</div>
+                    <img src="images/demo-image22-600x500.webp" alt="Man reading newspaper">
+                    <p class="section-three-image-caption">Dignissim diam quis enim lobortis</p>
+                </div>
+
+                <h2 class="section-three-article-title">Unanimous Haltered Loud One Trod Trigly Style Four</h2>
+                  <p class="section-1-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+            
+                <div class="section-three-article-meta">
+                    By <span class="section-three-article-meta-name">Maxin Dalton</span> / Editor on Aug 13, 2014
+                </div>
+
+                <div class="section-three-article-content">
+                    <div class="section-three-content-column">
+                        <p class="section-three-content-first-letter">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+                        <p>This nudged jeepers less dodged sheared opposite then around but a due heinous square subtle amphibiously chameleon palpable tyrannical aboard outside and without vicious scallop flapped newt as.</p>
+                    </div>
+                    <div class="section-three-content-column">
+                        <p>Some grimaced after after mercifully lion thus oppressive hello heroically lax before or was or next inside in inside forward focused mused and without or within for on without mute toward a</p>
+                        
+                     <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section-three-read-more">Read the Post →</a>
+                    </div>
+                    
+                </div>
+
+               
+
+                <ul class="section-three-article-list">
+                    <li class="section-three-article-list-item">Heared Opposite Then Around But A Heinous Square Amphibisly</li>
+                    <li class="section-three-article-list-item">Wonderfully And As The Well and Where Supply Much Hyena So</li>
+                    <li class="section-three-article-list-item">This Nudged Jeepers Less Hugged Sheared Opposite Then Around</li>
+                </ul>
+            </div>
+
+            <!-- Right Sidebar - Contact Form -->
+            <div class="section-three-right">
+                <div class="section-three-form-wrapper">
+                    <form>
+                        <div class="section-three-form-group">
+                            <label class="section-three-form-label">Your name</label>
+                            <input type="text" class="section-three-form-input">
+                        </div>
+                        <div class="section-three-form-group">
+                            <label class="section-three-form-label">Your email</label>
+                            <input type="email" class="section-three-form-input">
+                        </div>
+                        <div class="section-three-form-group">
+                            <label class="section-three-form-label">Subject</label>
+                            <input type="text" class="section-three-form-input">
+                        </div>
+                        <div class="section-three-form-group">
+                            <label class="section-three-form-label">Your message (optional)</label>
+                            <div class="section-three-form-textarea-wrapper">
+                                <textarea class="section-three-form-textarea"></textarea>
+                                <span class="section-three-form-icon">✎</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="section-three-form-button">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Right Cards -->
+                <div class="section-three-right-cards">
+                    <div class="section-three-right-card">
+                        <div class="section-three-right-card-header">
+                            <span class="section-three-right-card-header-red">MODULE 1</span> 
+                            <span class="section-three-right-card-header-gray">SUBTITLE</span>
+                        </div>
+                        <div class="section-three-right-card-category">Culture</div>
+                        <h3 class="section-three-right-card-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                        <p class="section-three-right-card-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so. This nudged jeepers</p>
+                        <div class="section-three-right-card-divider"></div>
+                        <div class="section-three-right-card-tags">Politic . Sport</div>
+                        <h4 class="section-three-right-card-subtitle">This Nudged Jeepers While Much The Less</h4>
+                        <p class="section-three-right-card-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so. This nudged jeepers</p>
+                    </div>
+
+                    <div class="section-three-right-card">
+                        <div class="section-three-right-card-header">
+                            <span class="section-three-right-card-header-red">MODULE 1</span> 
+                            <span class="section-three-right-card-header-gray">SUBTITLE</span>
+                        </div>
+                        <div class="section-three-right-card-category">Culture</div>
+                        <h3 class="section-three-right-card-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                        <p class="section-three-right-card-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so. This nudged jeepers</p>
+                        <div class="section-three-right-card-divider"></div>
+                        <div class="section-three-right-card-tags">Politic . Sport</div>
+                        <h4 class="section-three-right-card-subtitle">This Nudged Jeepers While Much The Less</h4>
+                        <p class="section-three-right-card-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so. This nudged jeepers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section4 -->
+      <div class="section4-container">
+        <!-- Left Sidebar -->
+        <div class="section4-left">
+            <div class="section4-sidebar-card">
+                <div class="section4-sidebar-category">Culture</div>
+                <h3 class="section4-sidebar-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                <p class="section4-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly</p>
+                <div class="section4-sidebar-divider"></div>
+                <div class="section4-sidebar-tags">Politic . Sport</div>
+                <h4 class="section4-sidebar-subtitle">This Nudged Jeepers While Much The Less</h4>
+                <p class="section4-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly</p>
+            </div>
+
+            <div class="section4-sidebar-card">
+                <div class="section4-sidebar-category">Uncategorized</div>
+                <h3 class="section4-sidebar-title">This Nudged Jeepers Ded Sesulky Oite Ten Around Style 3</h3>
+                <p class="section4-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly</p>
+            </div>
+
+            <div class="section4-sidebar-card">
+                <div class="section4-sidebar-category">Culture . Europe</div>
+                <h3 class="section4-sidebar-title">Unanimous Quail Was Inverse Much No Remade Dimly Salmon</h3>
+                <p class="section4-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly</p>
+            </div>
+
+            <div class="section4-sidebar-card">
+                <div class="section4-sidebar-category">Europe . Finance</div>
+                <h3 class="section4-sidebar-title">Unanimous Haltered Loud One Trod Trigh Style Four</h3>
+                <p class="section4-sidebar-description">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly</p>
+            </div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="section4-center">
+            <div class="section4-featured-image">
+                <div class="section4-image-label">REPORT</div>
+                <img src="images/demo-image12-950x500.webp" alt="Fitness workout">
+                <p class="section4-image-caption">Dignissim diam quis enim lobortis</p>
+            </div>
+
+            <h2 class="section4-article-title">This Nudged Jeepers Ded Sesulky Oite Ten Around Style 3</h2>
+            
+            <p class="section4-article-excerpt">This nudged jeepers less dodged sheared opposite then around but a due heinous square subtle amphibiously chameleon palpable tyrannical aboard outside and without vicious scallop flapped newt as.</p>
+
+            <div class="section4-article-meta">
+                By <span class="section4-article-meta-name">Maxin Dalton</span> / Editor on FEB 20, 2026
+            </div>
+
+            <div class="section4-article-content">
+                <div class="section4-content-column">
+                    <p class="section4-content-first-letter">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+                    <p>This nudged jeepers less dodged sheared opposite then around but a due heinous square subtle amphibiously chameleon palpable tyrannical aboard outside and without vicious scallop flapped newt as.</p>
+                </div>
+                <div class="section4-content-column">
+                    <p>Some grimaced after after mercifully lion thus oppressive hello heroically lax before or was or next inside in inside forward focused mused and without or within for on without mute toward a</p>
+                    <p>This much heroic inside that crud and thus that mutes for on within that for as and without some that.</p>
+                  <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section4-read-more">Read the Post →</a>
+                </div>
+            </div>
+
+          
+
+            <ul class="section4-article-list">
+                <li class="section4-article-list-item">Hoically Quizzical Far Impala Heroic A Passably And Through</li>
+                <li class="section4-article-list-item">Raccoon And Some Dear Gnashed Much Metrically Irksomely</li>
+            </ul>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="section4-right">
+            <div class="section4-right-card">
+                <div class="section4-right-card-image">
+                    <div class="section4-right-card-label">REPORT</div>
+                    <img src="images/demo-image17-400x520.webp" alt="Woman with car">
+                </div>
+                <h3 class="section4-right-card-title">That While Less Familiar When Careless Alongside</h3>
+                <p class="section4-right-card-excerpt">This nudged jeepers while much spread beside opposite then around but a due heinous square subtle amphibiously chameleon palpable tyrannical aboard outside much outside abroad remorse</p>
+                <div class="section4-right-card-meta">
+                    By <span class="section4-right-card-meta-name">Maxin Dalton</span> / Editor onFEB 20, 2026
+                </div>
+
+                <div class="section4-right-card-content">
+                    <div class="section4-right-card-column">
+                        <p class="section4-right-card-column-first-letter">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+                    </div>
+                    <div class="section4-right-card-column">
+                        <p>This nudged sheared opposite then around but a heinous square subtle chameleon outside remotely much outside</p>
+                       <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section4-right-card-link">Read the Post →</a>
+                    </div>
+                </div>
+
+             
+            </div>
+        </div>
+    </div>
+    <!-- section5 -->
+       <div class="section5-container">
+      
+        
+        <!-- Left Sidebar -->
+        <aside class="section5-sidebar">
+             <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">MODULE 1</span> 
+                    <span class="section-1-card-header-gray">SUBTITLE</span>
+                </div>
+            
+            <div class="section5-sidebar-category">
+                <div class="section5-category-label">Culture</div>
+                <h3 class="section5-sidebar-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                <p class="section5-sidebar-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+            </div>
+            <div class="section4-sidebar-divider"></div>
+
+            <div class="section5-sidebar-category">
+                <div class="section5-category-label">This Week</div>
+                <h3 class="section5-sidebar-title">This Nudged Jeepers While Much Spread Beside Ouch</h3>
+                <p class="section5-sidebar-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+            </div>
+            <div class="section4-sidebar-divider"></div>
+
+            <div class="section5-sidebar-category">
+                <div class="section5-category-label">Uncategorized</div>
+                <h3 class="section5-sidebar-title">This Nudged Jeepers Ded Sesulky Oite Un Around Slyles</h3>
+                <p class="section5-sidebar-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+            </div>
+            <div class="section4-sidebar-divider"></div>
+
+            <div class="section5-sidebar-category">
+                <div class="section5-category-label">Ending, Science</div>
+                <h3 class="section5-sidebar-title">Funnudedly Quail Was Inverse Much So Remade Dimly Salmon</h3>
+                <p class="section5-sidebar-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so.</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="section5-main-content">
+            <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">MODULE 1</span> 
+                    <span class="section-1-card-header-gray">SUBTITLE</span>
+                </div>
+            
+            <div class="section5-content-header">
+              
+                
+                <div>
+                   
+                    <div class="section5-hero-image">
+                           <div class="section5-section-label">PEOPLE</div>
+                        <img src="images/demo-image19-950x475.webp" alt="Protest scene with sign reading 'WE BETTER THAN THIS'">
+                    </div>
+
+                   
+
+                    
+
+                    <div class="section5-article-content">
+                        <div class="section5-article-text">
+                             <div class="section5-meta-info">
+                        <span class="section4-article-meta-name">Maxin Dalton</span>on March 6, 2014
+                        <div  class="left">
+                        <span style="margin: 0 5px;">|</span>
+                        102 Views
+                        <span style="margin: 0 5px;">|</span>
+                        3 Likes
+                        
+
+                    </div>
+                    </div>
+                            <h2 class="section5-article-title">Heard Opposite Then Around But A Heinous Square Amphibiously</h2>
+                            <div class="section4-article-content">
+                            <p class="section5-paragraph">
+                                <span class="section5-dropcap">W</span>ithin spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more sooodpecker less more so..
+                            </p>
+                            <p class="section5-paragraph">
+                                This nudged jeepers less dogged sheared opposite then around but a due heinous square subtle amphibiously chameleon palpable tyrannical aboard amidst much outside without vicious scallop flapped newt as.
+                            </p>
+                            <p class="section5-paragraph">
+                                Some grimaced after after mercifully lion thus opposite far less the opposite operatically feverishly more the dearly that inside spilling crud large goldfish irrespective carelessly and sleekly while yikes this.
+                            </p>
+                            <p class="section5-paragraph">
+                                Less baboon inconspicuous pending masochistically stubbornly
+                                <br>
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section5-read-more">Read the Post →</a>
+                            </p>
+
+                           
+                            </div>
+                        </div>
+
+                        <aside class="section5-related-articles">
+                            
+
+                            <div class="section5-related-item">
+                                <div class="section5-related-thumbnail">
+                                    <img src="images/demo-image12-950x500.webp" alt="Author photo">
+                                </div>
+                                <div class="section5-related-info">
+                                    <div class="section5-related-author">Mario DuBois <span class="section5-related-date">on Mar. 1</span></div>
+                                   
+                                    <div class="section5-related-headline">Ideally Quizzical Far Impala Heroic A Passably</div>
+                                </div>
+                            </div>
+
+                            <div class="section5-related-item">
+                                <div class="section5-related-thumbnail">
+                                    <img src="images/demo-image17-400x520.webp" alt="Author photo">
+                                </div>
+                                <div class="section5-related-info">
+                                    <div class="section5-related-author">Mario DuBois <span class="section5-related-date">on Mar. 1</span></div>
+                                  
+                                    <div class="section5-related-headline">Beavetons And Some Dear Gasshkd Much Well Jeeomsny</div>
+                                </div>
+                            </div>
+
+                            <div class="section5-related-item">
+                                <div class="section5-related-thumbnail">
+                                    <img src="images/demo-image19-950x475.webp" alt="Author photo">
+                                </div>
+                                <div class="section5-related-info">
+                                    <div class="section5-related-author">Mario DuBois <span class="section5-related-date">on Mar. 1</span></div>
+                                  
+                                    <div class="section5-related-headline">That While Less Familiar When Careless Alongside</div>
+                                </div>
+                            </div>
+
+                            <div class="section5-related-item">
+                                <div class="section5-related-thumbnail">
+                                    <img src="images/demo-image22-600x500.webp" alt="Author photo">
+                                </div>
+                                <div class="section5-related-info">
+                                    <div class="section5-related-author">Mario DuBois <span class="section5-related-date">on Mar. 1</span></div>
+                                   
+                                    <div class="section5-related-headline">Excluding Well A Some Humming Melodious</div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- section 6 -->
+     <div class="section6-container">
+        <div class="section6-header">
+            <div class="section6-title-wrapper">
+                <span class="section6-title">MODULE 6 </span>
+                <span class="section6-subtitle">SUBTITLE</span>
+            </div>
+        </div>
+
+        <div class="section6-content-box">
+            <div class="section6-content-wrapper">
+                <div class="section6-content" id="section6-carousel">
+                <div class="section6-card">
+                    <div class="section6-author">
+                        <span class="section6-author-name">MAXIN DALTON</span>
+                        <span class="section6-date">ON MAY 1, 2018</span>
+                    </div>
+                    <h3 class="section6-card-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                </div>
+
+                <div class="section6-card">
+                    <div class="section6-author">
+                        <span class="section6-author-name">MAXIN DALTON</span>
+                        <span class="section6-date">ON FEB 20, 2026</span>
+                    </div>
+                    <h3 class="section6-card-title">This Nudged Jeepers While Much The Less</h3>
+                </div>
+
+                <div class="section6-card">
+                    <div class="section6-author">
+                        <span class="section6-author-name">MAXIN DALTON</span>
+                        <span class="section6-date">ON FEB 20, 2026</span>
+                    </div>
+                    <h3 class="section6-card-title">This Nudged Jeepers Ded Sesulky Oftc Ten...</h3>
+                </div>
+
+                <div class="section6-card">
+                    <div class="section6-author">
+                        <span class="section6-author-name">MAXIN DALTON</span>
+                        <span class="section6-date">ON FEB 20, 2026</span>
+                    </div>
+                    <h3 class="section6-card-title">Timmediately Quail Was Inverse Much So Remade...</h3>
+                </div>
+
+                <!-- Additional cards for carousel demonstration -->
+                <div class="section6-card">
+                    <div class="section6-author">
+                        <span class="section6-author-name">MAXIN DALTON</span>
+                        <span class="section6-date">ON FEB 20, 2026</span>
+                    </div>
+                    <h3 class="section6-card-title">Another Article Title Goes Here For Demonstration</h3>
+                </div>
+
+                <div class="section6-card">
+                    <div class="section6-author">
+                        <span class="section6-author-name">MAXIN DALTON</span>
+                        <span class="section6-date">ON FEB 20, 2026</span>
+                    </div>
+                    <h3 class="section6-card-title">One More Article To Show Carousel Functionality</h3>
+                </div>
+            </div>
+
+           
+        </div>
+        </div>
+         <div class="section6-navigation">
+                <button class="section6-nav-button" id="section6-prev">«</button>
+                <button class="section6-nav-button" id="section6-next">»</button>
+            </div>
+    </div>
+    <!-- section 7 -->
+       <div class="section7-container">
+        <div class="section7-main-content">
+            <!-- Left Column - Module 2 -->
+            <div class="section7-left-column">
+               <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">MODULE 1</span> 
+                    <span class="section-1-card-header-gray">SUBTITLE</span>
+                </div>
+
+                <!-- Article 1 -->
+                <div class="section7-article">
+                    <div class="section7-category">Culture</div>
+                    <h2 class="section7-article-title">Incongruous Jeepers Jellyfish One Far Well Known</h2>
+                    <div class="section7-article-content">
+                        <img src="images/demo-image12-950x500.webp" alt="Article thumbnail" class="section7-article-image">
+                        <p class="section7-article-text">
+                            Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so. This nudged jeepers less
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="section7-article">
+                    <div class="section7-tag">Politics</div>
+                    <div class="section7-tag" style="margin-left: 10px;">Sport</div>
+                    <h2 class="section7-article-title">This Nudged Jeepers While Much The Less</h2>
+                    <div class="section7-article-content">
+                        <img src="images/demo-image12-950x500.webp" alt="Article thumbnail" class="section7-article-image">
+                        <p class="section7-article-text">
+                            Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so. This nudged jeepers less
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="section7-right-column">
+                <!-- Contributors Section -->
+                <div class="section7-contributors">
+                    <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">Contributors</span> 
+                    <span class="section-1-card-header-gray">Read the Latest Report</span>
+                </div>
+
+                   
+                    <div class="section7-contributor-card">
+                        <div class="section7-contributor-content">
+                             <div class="section7-opinion-label">
+                        Latest opinion by <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section7-author-link">Maxin Dalton</a>
+                    </div>
+
+                            <h3 class="section7-contributor-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                            <p class="section7-contributor-excerpt">
+                                Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so. This nudged jeepers less dogged sheared opposite then around but a due heinous
+                            </p>
+                        </div>
+
+                        <div class="section7-contributor-image-wrapper">
+                            <img src="images/cropped-man4-340x340.webp" alt="Maxin Dalton" class="section7-contributor-image">
+                            <div class="section7-contributor-info">
+                                <div class="section7-contributor-name">MAXIN DALTON</div>
+                                <div class="section7-contributor-role">(EDITOR)</div>
+                            </div>
+                            <div class="section7-contributor-details">
+                                <div class="section7-contributor-bio-title">Incongruous Jeepers Jellyfish One Far Well</div>
+                                <div class="section7-post-count">23 POSTS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 7 Section -->
+                <div class="section7-module7">
+                   <div class="section-1-card-header">
+                    <span class="section-1-card-header-red">MODULE 1</span> 
+                    <span class="section-1-card-header-gray">SUBTITLE</span>
+                </div>
+                   <div class="flex">
+                    <div class="section7-left">
+                    <div class="section7-category">Culture</div>
+                    <h3 class="section7-module7-article-title">Incongruous Jeepers Jellyfish One Far Well Known</h3>
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section7-module7-link">See all Posts</a>
+                    </div>
+                    <p class="section7-module7-text">
+                        Within spread beside the ouch sulky and this wonderfully and as the well and where supply much hyena so tolerantly recast hawk darn woodpecker less more so. This nudged jeepers less dogged sheared opposite then around but a due heinous square subtle amphibiously chameleon palpable tyrannical aboard removed much.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section8 -->
+    <div class="section8-container">
+        <!-- Header -->
+        <div class="section8-header">
+            <div class="section8-header-line"></div>
+            <div class="section8-header-content">
+                <h2 class="section8-main-title">SPORT TODAY</h2>
+                <p class="section8-subtitle">Global Warning issue, USA Operation in Middle East & Myanmar News</p>
+            </div>
+            <div class="section8-header-line"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="section8-content">
+            <!-- Featured Image Column -->
+            <div class="section8-featured">
+                <img src="images/boxwerbw.webp" alt="Featured Sport Image" class="section8-featured-image">
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="section8-articles">
+                <!-- Tennis Column -->
+                <div class="section8-article-column">
+                    <div class="section8-category-header">
+                      
+                        <div class="section8-category-content">
+                            <span class="section8-category-title">TENNIS</span>
+                            <span class="section8-category-subtitle">SUBTITLE</span>
+                        </div>
+                        <div class="section8-category-line"></div>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <div class="section8-article">
+                        <div class="section8-article-category">Culture</div>
+                        <h2><a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section8-article-title">Incongruous Jeepers Jellyfish One Far Well Known</a></h2>
+                        <p class="section8-article-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="section8-article">
+                        <div class="section8-tags">
+                            <span class="section8-tag">Politic</span>
+                            <span class="section8-tag">Sport</span>
+                        </div>
+                         <h2><a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section8-article-title">Incongruous Jeepers Jellyfish One Far Well Known</a></h2>
+                        <p class="section8-article-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+                    </div>
+                </div>
+
+                <!-- MMA Column 1 -->
+                <div class="section8-article-column">
+                    <div class="section8-category-header">
+                       
+                        <div class="section8-category-content">
+                            <span class="section8-category-title">MMA</span>
+                            <span class="section8-category-subtitle">SUBTITLE</span>
+                        </div>
+                        <div class="section8-category-line"></div>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <div class="section8-article">
+                        <div class="section8-article-category">Culture</div>
+                          <h2><a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section8-article-title">Incongruous Jeepers Jellyfish One Far Well Known</a></h2>
+                        <p class="section8-article-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="section8-article">
+                        <div class="section8-tags">
+                            <span class="section8-tag">Politic</span>
+                            <span class="section8-tag">Sport</span>
+                        </div>
+                          <h2><a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section8-article-title">Incongruous Jeepers Jellyfish One Far Well Known</a></h2>
+                        <p class="section8-article-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+                    </div>
+                </div>
+
+                <!-- MMA Column 2 (with underlined title) -->
+                <div class="section8-article-column">
+                    <div class="section8-category-header">
+                      
+                        <div class="section8-category-content">
+                            <span class="section8-category-title">MMA</span>
+                            <span class="section8-category-subtitle">SUBTITLE</span>
+                        </div>
+                        <div class="section8-category-line"></div>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <div class="section8-article">
+                        <div class="section8-article-category">Culture</div>
+                         <h2><a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section8-article-title">Incongruous Jeepers Jellyfish One Far Well Known</a></h2>
+                        <p class="section8-article-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="section8-article">
+                        <div class="section8-tags">
+                            <span class="section8-tag">Politic</span>
+                            <span class="section8-tag">Sport</span>
+                        </div>
+                        <h2><a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section8-article-title">Incongruous Jeepers Jellyfish One Far Well Known</a></h2>
+                        <p class="section8-article-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+                    </div>
+                </div>
+
+                <!-- Boxing Column -->
+                <div class="section8-article-column">
+                    <div class="section8-category-header">
+                       
+                        <div class="section8-category-content">
+                            <span class="section8-category-title">BOXING</span>
+                            <span class="section8-category-subtitle">SUBTITLE</span>
+                        </div>
+                        <div class="section8-category-line"></div>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <div class="section8-article">
+                        <div class="section8-article-category">Culture</div>
+                        <h2><a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section8-article-title">Incongruous Jeepers Jellyfish One Far Well Known</a></h2>
+                        <p class="section8-article-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="section8-article">
+                        <div class="section8-tags">
+                            <span class="section8-tag">Politic</span>
+                            <span class="section8-tag">Sport</span>
+                        </div>
+                         <h2><a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="section8-article-title">Incongruous Jeepers Jellyfish One Far Well Known</a></h2>
+                        <p class="section8-article-excerpt">Within spread beside the ouch sulky and this wonderfully and as the well and where</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </main>
+    <!-- footer -->
+       <footer class="footer-main">
+        <div class="footer-container">
+            <div class="footer-top">
+                <!-- About Us Section -->
+                <div class="footer-column">
+                    <h3 class="footer-section-title">About Us</h3>
+                     <p class="footer-about-text">The Capitalism Blog is a global news platform covering World, U.S., Business, Finance, Entertainment, Technology, Politics, and Sports</p>
+                    <p class="footer-about-text">We deliver timely, accurate, and insightful reporting to keep you informed in a fast-changing global economy.</p>
+                </div>
+
+                <!-- Tag Cloud Section -->
+                <div class="footer-column">
+                    <h3 class="footer-section-title">Tag Cloud</h3>
+                    <div class="footer-tags">
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Art and Culture</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">best</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Best theme</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">brunch</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Business</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Entertainment</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Magazine</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Mother Nature</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Musical</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">NewsCommerce</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Newspaper</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Politics</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Showbiz</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">Sport</a>
+                        <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-tag">TechNews</a>
+                    </div>
+                </div>
+
+                <!-- Hot News Section -->
+                <div class="footer-column">
+                    <h3 class="footer-section-title">Hot News</h3>
+                    <div class="footer-news-item">
+                        <div class="footer-news-author">Written by:<br> Maxin <br>Dalton</div>
+                        <div class="footer-news-title">Heared Opposite Then Around But A Heinous Square Amphibisly</div>
+                    </div>
+                    <div class="footer-news-item">
+                        <div class="footer-news-author">Written by:<br> Maxin <br>Dalton</div>
+                        <div class="footer-news-title">Excluding Well A Some Hummingbird Meticulous</div>
+                    </div>
+                </div>
+
+                <!-- Meta Section -->
+                <div class="footer-column">
+                    <h3 class="footer-section-title">Meta</h3>
+                    <ul class="footer-meta-list">
+                        <li class="footer-meta-item">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-meta-link">Log in</a>
+                        </li>
+                        <li class="footer-meta-item">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-meta-link">Entries feed</a>
+                        </li>
+                        <li class="footer-meta-item">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-meta-link">Comments feed</a>
+                        </li>
+                        <li class="footer-meta-item">
+                            <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-meta-link">WordPress.org</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <nav class="footer-nav">
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-nav-link">Horror</a>
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-nav-link">Cultural</a>
+                    <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="footer-nav-link">Illustrator</a>
+                </nav>
+
+                <div class="footer-copyright">
+                    <span class="footer-copyright-text">© Copyright 2026 - All Rights Reserved</span>
+                   
+                </div>
+
+                <!-- <div class="footer-scroll-top">
+                    ↑
+                </div> -->
+            </div>
+        </div>
+    </footer>
+     <script>
+        const carousel = document.getElementById('section6-carousel');
+        const prevButton = document.getElementById('section6-prev');
+        const nextButton = document.getElementById('section6-next');
+        const cards = document.querySelectorAll('.section6-card');
+        
+        let currentIndex = 0;
+        const cardsToShow = 4;
+        const totalCards = cards.length;
+        const maxIndex = totalCards - cardsToShow;
+
+        function updateCarousel() {
+            const cardWidth = cards[0].offsetWidth;
+            const translateX = -currentIndex * cardWidth;
+            carousel.style.transform = `translateX(${translateX}px)`;
+            
+            // Update button states
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled = currentIndex >= maxIndex;
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        // Initialize
+        updateCarousel();
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            updateCarousel();
+        });
+    </script>
+    <!--  -->
+      <script>
+        function openSidebar() {
+            document.getElementById('sidebar').classList.add('active');
+            document.getElementById('sidebarOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.remove('active');
+            document.getElementById('sidebarOverlay').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close sidebar with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSidebar();
+            }
+        });
+    </script>
+</body>
+</html>
