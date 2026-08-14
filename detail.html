@@ -24,40 +24,57 @@
 </head>
 <body>
     <main>
-        <!-- Ticker Bar -->
-        <div class="header-ticker-wrapper">
-            <div class="header-ticker-container">
-                <div class="header-ticker-label">
-                    <span class="header-ticker-icon">&#9889;</span>
-                    <span>LATEST</span>
-                </div>
-                <div class="header-ticker-content">
-                    <span class="header-ticker-item">Incongruous jeepers jellyfish one far Well known</span>
-                    <span class="header-ticker-item">This nudged jeepers while much the less</span>
-                    <span class="header-ticker-item">This nudged jeepers ded sesulky oite ten around...</span>
-                    <span class="header-ticker-item">Timmediately</span>
-                    <!-- Duplicate content for seamless loop -->
-                    <span class="header-ticker-item">Incongruous jeepers jellyfish one far Well known</span>
-                    <span class="header-ticker-item">This nudged jeepers while much the less</span>
-                    <span class="header-ticker-item">This nudged jeepers ded sesulky oite ten around...</span>
-                    <span class="header-ticker-item">Timmediately</span>
-                </div>
+              <!-- Ticker Bar -->
+    <div class="header-ticker-wrapper">
+        <div class="header-ticker-container">
+            <div class="header-ticker-label">
+                 <span class="header-ticker-icon">&#9889;</span>
+                <span>LATEST</span>
+            </div>
+            <div class="header-ticker-content">
+                <span class="header-ticker-item"><a title="Banvelca Foundation Joins Canticle of Peace Alongside Pope Leo XIV and Andrea Bocelli" href="world/banvelca-foundation-joins-canticle-of-peace-pope-leo-xiv-andrea-bocelli">Banvelca Foundation joins &ldquo;Canticle of Peace&rdquo; alongside Pope Leo XIV and Andrea Bocelli</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="world/gazas-nasser-hospital-condemns-msf-suspension-most-sevice">Gaza&rsquo;s Nasser Hospital condemns MSF decision to suspend most services</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="entertainment/logan-pauls-pikachu-illustrator-pokemon-card-sells-record">Logan Paul&rsquo;s Pikachu Illustrator Pok&eacute;mon card sells for record $16.5M at auction</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="technology/one-tech-tip-take-iphone-security-to-extreme-lockdown-mode">One Tech Tip: Utilize Lockdown Mode to enhance the security of your iPhone.</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="business/kraft-heinz-pauses-plans-to-split-into-two-companies-fixable">Kraft Heinz pauses plans to split into 2 companies, says its problems are &lsquo;fixable&rsquo;</a></span>
+                <!-- Duplicate content for seamless loop -->
+                <span class="header-ticker-item"><a title="Banvelca Foundation Joins Canticle of Peace Alongside Pope Leo XIV and Andrea Bocelli" href="world/banvelca-foundation-joins-canticle-of-peace-pope-leo-xiv-andrea-bocelli">Banvelca Foundation joins &ldquo;Canticle of Peace&rdquo; alongside Pope Leo XIV and Andrea Bocelli</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="world/gazas-nasser-hospital-condemns-msf-suspension-most-sevice">Gaza&rsquo;s Nasser Hospital condemns MSF decision to suspend most services</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="entertainment/logan-pauls-pikachu-illustrator-pokemon-card-sells-record">Logan Paul&rsquo;s Pikachu Illustrator Pok&eacute;mon card sells for record $16.5M at auction</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="technology/one-tech-tip-take-iphone-security-to-extreme-lockdown-mode">One Tech Tip: Utilize Lockdown Mode to enhance the security of your iPhone.</a></span>
+                <span class="header-ticker-item"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="business/kraft-heinz-pauses-plans-to-split-into-two-companies-fixable">Kraft Heinz pauses plans to split into 2 companies, says its problems are &lsquo;fixable&rsquo;</a></span>
             </div>
         </div>
+    </div>
 
-         <!-- Top Bar with Controls and Logo -->
+    <!-- Top Bar with Controls and Logo -->
     <div class="header-top-bar">
         <div class="header-top-container">
             <div class="header-controls-left">
-                <button class="header-icon-btn" onclick="openSidebar()">☰</button>
-                  <!-- Sidebar Overlay -->
+                <button class="header-icon-btn" type="button" aria-label="Open menu" onclick="openSidebar()">&#9776;</button>
+            </div>
+
+            <div class="header-logo-container">
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="https://www.thecapitalismblog.com"><img src="images/The-Capitalism-Blog-logo.svg" alt="Logo" class="header-logo-img"></a>
+                <h1 class="small-size" style="display: none;">The Capitalism Blog | Global Business &amp; Finance News Today</h1>
+            </div>
+
+            <div class="header-social-links">
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="https://medium.com/@thecapitalismblog_" class="header-social-icon"><img src="images/medium.webp" alt="medium"></a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="https://www.reddit.com/user/thecapitalismblognew/" class="header-social-icon reddit"><img src="images/reddit.png" alt="reddit"></a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="https://substack.com/@thecapitalismblog" class="header-social-icon"><img src="images/substack.webp" alt="substack"></a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="https://x.com/thecapital_blog" class="header-social-icon"><img src="images/twitter.webp" alt="twitter"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay -->
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
 
     <!-- Sidebar -->
     <div class="sidebar-container" id="sidebar">
         <div class="sidebar-header">
-            <img src="images/" alt="">
-            <button class="sidebar-close-btn" onclick="closeSidebar()">«</button>
+            <button class="sidebar-close-btn" type="button" aria-label="Close menu" onclick="closeSidebar()">&laquo;</button>
         </div>
 
         <div class="sidebar-content">
@@ -66,14 +83,14 @@
                 <h2 class="sidebar-author-title">AUTHOR</h2>
                 <div class="sidebar-author-box">
                     <div class="sidebar-author-avatar">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=70&h=70&fit=crop" 
-                             alt="Maxin Dalton" 
+                        <img src="images/william-a-kim.jpg"
+                             alt="William A. Kim"
                              class="sidebar-author-image">
                     </div>
                     <div class="sidebar-author-info">
                         <div class="sidebar-author-role">Editor</div>
-                        <h3 class="sidebar-author-name">Maxin Dalton</h3>
-                        <p class="sidebar-author-bio">Within spread beside the ouch sulky and this wonde</p>
+                        <h2 class="sidebar-author-name"><a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="william-a-kim">William A.Kim</a></h2>
+                        <p class="sidebar-author-bio">William covers us politics and sports news across the world.</p>
                     </div>
                 </div>
             </div>
@@ -82,118 +99,91 @@
             <div class="sidebar-show-section">
                 <h2 class="sidebar-show-title">TODAY SHOW</h2>
                 <div class="sidebar-show-item">
-                    <img src="images/nman-768x375.webp" 
-                         alt="Show" 
+                    <img src="images/Tony-Clark.webp"
+                         alt="Show"
                          class="sidebar-show-image">
                     <p class="sidebar-show-text">
-                        Reprehenderit organic dreamcatcher, mollit quis forage fanny pack mcsweeney's 3 wolf moon et. Incididunt sint swag wayfarers stumptown magna.
+                       <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="sports/tony-clark-resigns-mlb-players-union-head-cap-fight-looms">Tony Clark resigns as MLB players&rsquo; union head as possible cap fight looms</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-  
-
-                <!--  -->
-                <!-- <button class="header-icon-btn">⚙</button> -->
-                <!-- <button class="header-icon-btn header-dark-mode"><img src="images/moon.png" alt="moon"></button> -->
-            </div>
-            
-            <div class="header-logo-container">
-                  <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com"><img src="images/The-Capitalism-Blog-logo.svg" alt="Logo" class="header-logo-img"></a>
-            </div>
-            
-            <div class="header-social-links">
-                  <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://medium.com/@thecapitalismblog_" class="header-social-icon"><img src="images/medium.webp" alt="medium"></a>
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-social-icon reddit"><img src="images/reddit.png" alt=""></a>
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://substack.com/@thecapitalismblog" class="header-social-icon"><img src="images/substack.webp" alt="substack"></a>
-              <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://x.com/thecapital_blog" class="header-social-icon"><img src="images/twitter.webp" alt=""></a>
-            </div>
-        </div>
-    </div>
-
-       <!-- Navigation Menu -->
+    <!-- Navigation Menu -->
 <nav class="header-navigation">
     <div class="header-nav-container">
         <ul class="header-menu">
             <li class="header-menu-item">
-               <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com" class="header-menu-link header-active">HOME</a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="https://www.thecapitalismblog.com" class="header-menu-link header-active">HOME</a>
             </li>
             <li class="header-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">CATEGORY LAYOUTS</a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="world/world" class="header-menu-link">World</a>
             </li>
             <li class="header-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">TAGS LAYOUT</a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="us/us" class="header-menu-link">U.S</a>
             </li>
             <li class="header-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">POST STYLES</a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="business/business" class="header-menu-link">Business</a>
             </li>
             <li class="header-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">MODULE</a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="finance/finance" class="header-menu-link">Finance</a>
             </li>
             <li class="header-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">CPT</a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="entertainment/entertainment" class="header-menu-link">Entertainment</a>
             </li>
             <li class="header-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="#" class="header-menu-link">404</a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="technology/technology" class="header-menu-link">Technology</a>
+            </li>
+             <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="politics/politics" class="header-menu-link">Politics</a>
+            </li>
+             <li class="header-menu-item">
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="sports/sports" class="header-menu-link">Sports</a>
             </li>
         </ul>
-        <button class="header-search-btn"><img src="images/icons8-search-50.png" alt=""></button>
-        <button class="mobile-menu-toggle">
+
+        <button class="mobile-menu-toggle" type="button" aria-label="Open menu">
             <span>MENU</span>
-            <span class="menu-icon">☰</span>
+            <span class="menu-icon">&#9776;</span>
         </button>
     </div>
-    
+
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay">
         <div class="mobile-menu-header">
             <span>MENU</span>
-            <button class="mobile-menu-close">✕</button>
+            <button class="mobile-menu-close" type="button" aria-label="Close menu">&#10005;</button>
         </div>
-         <ul class="mobile-menu-list">
+        <ul class="mobile-menu-list">
             <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="https://www.thecapitalismblog.com" class="mobile-menu-link">HOME</a>
-                <span class="dropdown-arrow">▼</span>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="https://www.thecapitalismblog.com" class="mobile-menu-link">HOME</a>
             </li>
             <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../world/world" class="mobile-menu-link">WORLD</a>
-                <span class="dropdown-arrow">▼</span>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="world/world" class="mobile-menu-link">WORLD</a>
             </li>
             <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../us/us" class="mobile-menu-link">US</a>
-                <span class="dropdown-arrow">▼</span>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="us/us" class="mobile-menu-link">US</a>
             </li>
             <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../business/business" class="mobile-menu-link">BUSINESS</a>
-                <span class="dropdown-arrow">▼</span>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="business/business" class="mobile-menu-link">BUSINESS</a>
             </li>
             <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../finance/finance" class="mobile-menu-link">FINANCE</a>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="finance/finance" class="mobile-menu-link">FINANCE</a>
             </li>
             <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../entertainment/entertainment" class="mobile-menu-link">ENTERTAINMENT</a>
-                <span class="dropdown-arrow">▼</span>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="entertainment/entertainment" class="mobile-menu-link">ENTERTAINMENT</a>
             </li>
             <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../technology/technology" class="mobile-menu-link">TECHNOLOGY</a>
-            <span class="dropdown-arrow">▼</span>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="technology/technology" class="mobile-menu-link">TECHNOLOGY</a>
             </li>
             <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../politics/politics" class="mobile-menu-link">POLITICS</a>
-           <span class="dropdown-arrow">▼</span>
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="politics/politics" class="mobile-menu-link">POLITICS</a>
             </li>
-              <li class="mobile-menu-item">
-                <a title="The Capitalism Blog | Global Business & Finance News Today" href="../sports/sports" class="mobile-menu-link">SPORTS</a>
-            <span class="dropdown-arrow">▼</span>
+            <li class="mobile-menu-item">
+                <a title="The Capitalism Blog | Global Business &amp; Finance News Today" href="sports/sports" class="mobile-menu-link">SPORTS</a>
             </li>
         </ul>
-        <div class="mobile-search-container">
-            <button class="header-search-btn mobile-search-btn">
-                <img src="images/icons8-search-50.png" alt="">
-            </button>
-        </div>
     </div>
 </nav>
 
@@ -677,8 +667,6 @@ const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
 
 mobileMenuLinks.forEach((link, index) => {
     link.addEventListener('click', function(e) {
-        e.preventDefault();
-        
         // Remove active class from all
         mobileMenuLinks.forEach(l => l.classList.remove('active'));
         mobileMenuItems.forEach(i => i.classList.remove('active'));
