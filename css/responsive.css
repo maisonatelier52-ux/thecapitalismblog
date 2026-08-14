@@ -31,7 +31,7 @@ img{
 }
 .header-logo-img {
     height: 22px;
-    width:100%;
+    /* width:100%; */
 }
 .header-social-links{
     display: none;
