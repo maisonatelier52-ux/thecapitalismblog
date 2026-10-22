@@ -1,6 +1,6 @@
 :root {
-  --premium-blue: #0b4aa2;
-  --premium-navy: #06254f;
+  --premium-blue:  #06254f;
+  --premium-navy:#2060ba;
   --premium-ink: #141414;
   --premium-muted: #6a6a6a;
   --premium-rule: #d9dde5;
@@ -178,7 +178,7 @@
 .premium-copy .premium-dropcap::first-letter {
   float: left;
   margin: 7px 9px 0 0;
-  color: var(--premium-navy);
+  color:  #06254f;;;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 76px;
   line-height: .68;
@@ -344,7 +344,7 @@
 }
 
 @media (max-width: 680px) {
-  .premium-shell { width: min(100% - 28px, 1180px); margin-bottom: 55px; }
+  .premium-shell { width: min(100% - 10px, 1180px); margin-bottom: 55px; }
   .premium-title { font-size: 39px; line-height: 1.02; }
   .premium-dek { font-size: 17px; }
   .premium-byline-row { align-items: flex-start; }
@@ -357,6 +357,11 @@
   .premium-facts { grid-template-columns: 1fr; }
   .premium-fact + .premium-fact { border-left: 0; border-top: 1px solid #cad1dc; }
   .premium-sidebar-inner { grid-template-columns: 1fr; }
+  .premium-toc {
+    
+    border: 0px solid #8db0df;
+    
+}
 }
 
 @media print {
