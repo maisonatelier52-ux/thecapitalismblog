@@ -3154,8 +3154,9 @@ a:hover{
 
         .detail-image {
             width: 100%;
-            height: auto;
+            height: 500px;
             display: block;
+            object-fit: cover;
         }
 
         .detail-image-caption {
